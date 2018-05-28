@@ -1,0 +1,129 @@
+[W 180526 15:11:57 web:1946] 404 GET /api/imagecode?pcodeid=&codeid=29535597-09d3-4c52-a680-21231e01f587 (127.0.0.1) 3.00ms
+[E 180526 15:13:52 VerifyCode:90] global name 'constants' is not defined
+[W 180526 15:31:51 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.00ms
+[E 180526 15:32:19 qiniu_storage:33] HTTPSConnectionPool(host='uc.qbox.me', port=443): Max retries exceeded with url: /v1/query?ak=uzc59bVURbUbazey9vrexXKocNKBUN8NuLijk57N&bucket=ihome (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x02FB8570>: Failed to establish a new connection: [Errno 11004] getaddrinfo failed',))
+[E 180526 15:32:19 Profile:24] HTTPSConnectionPool(host='uc.qbox.me', port=443): Max retries exceeded with url: /v1/query?ak=uzc59bVURbUbazey9vrexXKocNKBUN8NuLijk57N&bucket=ihome (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x02FB8570>: Failed to establish a new connection: [Errno 11004] getaddrinfo failed',))
+[W 180526 15:32:33 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180526 15:32:56 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180526 15:33:13 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[E 180526 15:44:01 web:1524] Uncaught exception GET /api/profile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/profile', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Requested-With': 'XMLHttpRequest', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://127.0.0.1:8000/my.html', 'Cookie': '_xsrf=2|4b2fff13|91bd225ee8375b2653345c8693d077d5|1527320534; session_id="2|1:0|10:1527320534|10:session_id|44:MGMwNjBlMDk2MTMxNDliYmIwM2U3YzRiODNjOGQ5ZDc=|524476b19392e6e4de9564b2a9dc8be88437413572693b2ca5f1549c666a10f6"', 'If-None-Match': '"a2467693130822d9387a4afc43491e399c9379f7"'})
+    Traceback (most recent call last):
+      File "c:\python27\lib\site-packages\tornado\web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "C:\Users\Administrator\Desktop\ihome_test\utils\commons.py", line 19, in wrapper
+        fun(request_handler_obj, *args, **kwargs)
+      File "C:\Users\Administrator\Desktop\ihome_test\handlers\Profile.py", line 50, in get
+        if ret["up_avatar"]:
+    TypeError: 'NoneType' object has no attribute '__getitem__'
+[E 180526 15:44:01 web:1946] 500 GET /api/profile (127.0.0.1) 50.00ms
+[E 180526 15:44:03 web:1524] Uncaught exception GET /api/profile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/profile', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Requested-With': 'XMLHttpRequest', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://127.0.0.1:8000/my.html', 'Cookie': '_xsrf=2|4b2fff13|91bd225ee8375b2653345c8693d077d5|1527320534; session_id="2|1:0|10:1527320534|10:session_id|44:MGMwNjBlMDk2MTMxNDliYmIwM2U3YzRiODNjOGQ5ZDc=|524476b19392e6e4de9564b2a9dc8be88437413572693b2ca5f1549c666a10f6"'})
+    Traceback (most recent call last):
+      File "c:\python27\lib\site-packages\tornado\web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "C:\Users\Administrator\Desktop\ihome_test\utils\commons.py", line 19, in wrapper
+        fun(request_handler_obj, *args, **kwargs)
+      File "C:\Users\Administrator\Desktop\ihome_test\handlers\Profile.py", line 50, in get
+        if ret["up_avatar"]:
+    TypeError: 'NoneType' object has no attribute '__getitem__'
+[E 180526 15:44:03 web:1946] 500 GET /api/profile (127.0.0.1) 4.00ms
+[E 180526 15:44:18 web:1524] Uncaught exception GET /api/profile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/profile', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Requested-With': 'XMLHttpRequest', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://127.0.0.1:8000/my.html', 'Cookie': '_xsrf=2|4b2fff13|91bd225ee8375b2653345c8693d077d5|1527320534; session_id="2|1:0|10:1527320534|10:session_id|44:MGMwNjBlMDk2MTMxNDliYmIwM2U3YzRiODNjOGQ5ZDc=|524476b19392e6e4de9564b2a9dc8be88437413572693b2ca5f1549c666a10f6"'})
+    Traceback (most recent call last):
+      File "c:\python27\lib\site-packages\tornado\web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "C:\Users\Administrator\Desktop\ihome_test\utils\commons.py", line 19, in wrapper
+        fun(request_handler_obj, *args, **kwargs)
+      File "C:\Users\Administrator\Desktop\ihome_test\handlers\Profile.py", line 50, in get
+        if ret["up_avatar"]:
+    TypeError: 'NoneType' object has no attribute '__getitem__'
+[E 180526 15:44:18 web:1946] 500 GET /api/profile (127.0.0.1) 4.00ms
+[E 180526 15:44:24 web:1524] Uncaught exception GET /api/profile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/profile', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Requested-With': 'XMLHttpRequest', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://127.0.0.1:8000/my.html', 'Cookie': '_xsrf=2|4b2fff13|91bd225ee8375b2653345c8693d077d5|1527320534; session_id="2|1:0|10:1527320534|10:session_id|44:MGMwNjBlMDk2MTMxNDliYmIwM2U3YzRiODNjOGQ5ZDc=|524476b19392e6e4de9564b2a9dc8be88437413572693b2ca5f1549c666a10f6"'})
+    Traceback (most recent call last):
+      File "c:\python27\lib\site-packages\tornado\web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "C:\Users\Administrator\Desktop\ihome_test\utils\commons.py", line 19, in wrapper
+        fun(request_handler_obj, *args, **kwargs)
+      File "C:\Users\Administrator\Desktop\ihome_test\handlers\Profile.py", line 50, in get
+        if ret["up_avatar"]:
+    TypeError: 'NoneType' object has no attribute '__getitem__'
+[E 180526 15:44:24 web:1946] 500 GET /api/profile (127.0.0.1) 4.00ms
+[W 180526 15:44:48 web:1521] 403 POST /api/login (127.0.0.1): '_xsrf' argument missing from POST
+[W 180526 15:44:48 web:1946] 403 POST /api/login (127.0.0.1) 1.00ms
+[W 180526 15:44:58 web:1521] 403 POST /api/login (127.0.0.1): '_xsrf' argument missing from POST
+[W 180526 15:44:58 web:1946] 403 POST /api/login (127.0.0.1) 0.00ms
+[W 180526 15:45:39 web:1521] 403 POST /api/login (127.0.0.1): '_xsrf' argument missing from POST
+[W 180526 15:45:39 web:1946] 403 POST /api/login (127.0.0.1) 2.00ms
+[W 180526 15:45:55 web:1946] 405 GET /api/login (127.0.0.1) 1.00ms
+[E 180526 16:01:49 Profile:24] 上传失败
+[E 180526 16:02:32 Profile:24] 上传失败
+[E 180526 16:03:24 Profile:24] 上传失败
+[W 180527 08:23:47 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 43.00ms
+[W 180527 08:24:09 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180527 08:24:32 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180527 08:24:53 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 5.00ms
+[W 180527 08:25:15 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180527 08:25:49 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 5.00ms
+[W 180527 08:25:54 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180527 08:25:57 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 5.00ms
+[W 180527 08:26:01 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180527 08:32:25 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180527 08:33:26 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180527 08:53:44 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 0.00ms
+[W 180527 08:53:51 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180527 08:54:07 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180527 08:55:22 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180527 08:55:25 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180527 08:57:57 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 5.00ms
+[W 180527 08:58:06 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180527 09:23:44 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180527 09:24:57 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 5.00ms
+[W 180527 09:25:13 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180527 09:25:38 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180527 09:27:08 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180527 09:27:49 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180527 09:28:10 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180527 09:28:33 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180527 09:28:44 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180527 09:29:05 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180527 09:29:22 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180527 09:30:40 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 5.00ms
+[W 180527 09:30:51 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180527 09:30:58 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180528 10:10:05 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 86.00ms
+[W 180528 10:22:06 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180528 10:22:42 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180528 10:23:41 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180528 10:23:52 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180528 10:24:17 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180528 10:24:37 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180528 10:25:20 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.00ms
+[W 180528 10:25:36 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180528 10:26:55 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180528 10:27:05 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180528 10:27:12 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180528 10:27:23 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180528 10:27:25 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 7.00ms
+[W 180528 10:27:36 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.00ms
+[W 180528 10:27:41 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180528 10:39:57 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180528 10:40:04 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180528 10:40:06 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180528 10:40:52 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 6.00ms
+[W 180528 10:40:56 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180528 10:43:50 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180528 10:44:02 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180528 10:44:04 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180528 10:44:56 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180528 10:45:07 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180528 10:45:14 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180528 10:45:46 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180528 10:46:32 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.00ms
+[W 180528 10:46:42 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180528 10:49:42 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.00ms
+[W 180528 10:50:14 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180528 10:51:32 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 180528 10:51:40 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 180528 10:52:09 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
